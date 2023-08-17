@@ -1,4 +1,5 @@
 import React from "react";
+import NavbarDefault from "../../components/Navbar";
 import backgroundImage from "../../assets/bg.png";
 import logoIEEE from "../../assets/logoIEEE.png";
 import Footer from "../../components/Footer";
@@ -14,7 +15,8 @@ const PreLoginLanding = () => {
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         {/* Navigation Bar */}
-        <Nav />
+        {/* <Nav /> */}
+        <NavbarDefault/>
         {/* <nav className="w-full bg-opacity-75 bg-transparent">
           <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-22">
