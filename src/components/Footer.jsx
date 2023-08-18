@@ -4,9 +4,18 @@ import { BsLinkedin, BsInstagram, BsTwitter } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="bg-[#C72F55] grid grid-flow-col grid-cols-8 gap-9 py-[1.8rem] text-white w-full px-[3rem]">
-      <div className="w-full text-left col-span-2 self-center">
-        <div className="mr-4">
+    <div
+      className="grid text-[#eeeeee] w-full py-[1.8rem] sm:px-[3rem]
+    lg:bg-[#938588] lg:grid-flow-col lg:grid-cols-8 lg:gap-9 
+    sm:bg-[#456789]
+    bg-[#123456] px-[0.9rem]"
+    >
+      <div
+        className="w-full text-left justify-self-center mb-6
+      lg:col-span-2 lg:self-center col-span-2 grid justify-center items-center
+      "
+      >
+        <div className="mr-4 grid justify-center items-center">
           <img src={logoIEEE} alt="Logo" className="w-[210px] h-[60px]" />
           <p className="text-2xl">
             <span className="font-bold">IEEE</span> Student Branch
@@ -25,11 +34,21 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="w-full text-left col-span-3">
+      <div
+        className="w-full text-left 
+      lg:col-span-3"
+      >
         <h3 className="font-bold text-2xl">Contact Us:</h3>
         <p className="text-md">
-          <p>Aarohi Manchanda : +91 99992 14243 </p>
-          <p>Vikramaditya Hiran : +91 99300 48037</p>
+          <div className="sm:flex">
+            {" "}
+            <p>Aarohi Manchanda :</p>
+            <p> +91 99992 14243 </p>
+          </div>
+          <div className="sm:flex">
+            <p>Vikramaditya Hiran :</p>
+            <p>+91 99300 48037</p>
+          </div>
         </p>
         <p className="my-1">
           <p className="text-lg font-bold">Email:</p>
@@ -43,9 +62,15 @@ const Footer = () => {
           </p>
         </p>
       </div>
-      <div className="w-full text-left col-span-3 px-4">
+      <div
+        className="w-full text-left 
+      lg:col-span-3 px-4"
+      >
         <h3 className="font-bold text-xl">Faculty Messages:</h3>
-        <p className="text-lg grid grid-flow-row grid-cols-2">
+        <p
+          className="text-lg grid grid-flow-row 
+        lg:grid-cols-2"
+        >
           <a href="#" className="underline">
             Director's Message
           </a>
@@ -61,7 +86,7 @@ const Footer = () => {
         </p>
         <div>
           <h3 className="font-bold text-xl mt-4">Links:</h3>
-          <p className="text-lg grid grid-flow-row grid-cols-2">
+          <p className="text-lg grid grid-flow-row lg:grid-cols-2">
             <a href="#" className="underline">
               Website Team{" "}
             </a>
