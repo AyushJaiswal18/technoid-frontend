@@ -8,12 +8,16 @@ function Navbar() {
   return (
     <div className="app fixed w-full">
       <nav>
-        <div className={`justify-around my-0  ${
-            !toggleMenu ? " " : "bg-[#FF3365] bg-opacity-50 backdrop-blur-sm duration-700"
-          }`}>
-          <div className="flex items-center justify-between mx-auto my-0 w-5/6 ">
+        <div
+          className={`justify-around my-0  ${
+            !toggleMenu
+              ? " "
+              : "bg-[#FF3365] bg-opacity-50 backdrop-blur-sm duration-700"
+          }`}
+        >
+          <div className="lg:bg-[#FF3365] lg:backdrop-blur-sm lg:bg-opacity-50 w-full flex items-center justify-between mx-auto my-0 px-12 ">
             {/* Primary menu and logo */}
-            <div className="flex flex-nowrap items-center justify-end gap-16 my-8">
+            <div className="flex flex-nowrap items-center justify-end gap-16 my-4">
               {/* logo */}
               <div>
                 <a href="#" class="flex items-center">
@@ -47,11 +51,11 @@ function Navbar() {
         {/* mobile navigation */}
         <div
           className={`fixed z-40 w-full bg-[#FF3365] backdrop-blur-sm bg-opacity-50 overflow-hidden flex flex-col lg:hidden gap-12 origin-top duration-700 ${
-            !toggleMenu ? "h-0" : "h-screen py-40"
+            !toggleMenu ? "h-0" : "h-screen py-20"
           }`}
         >
           <div className="px-8">
-            <div className="flex flex-col font-light gap-16 text-3xl underline underline-offset-8 tracking-wider">
+            <div className="flex flex-col font-light gap-16 text-2xl underline underline-offset-8 tracking-wider">
               <a href="#" className="">
                 HOME
               </a>
