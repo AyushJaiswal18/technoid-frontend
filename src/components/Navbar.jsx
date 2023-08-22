@@ -6,7 +6,7 @@ function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="app fixed w-full">
+    <div className="z-20 app fixed w-full">
       <nav>
         <div
           className={`justify-around my-0  ${

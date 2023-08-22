@@ -11,10 +11,9 @@ const PreLoginLanding = () => {
   return (
     <>
       <div
-        className="h-[100vh] bg-cover bg-fixed bg-center flex flex-col text-white"
+        className="h-[100vh] bg-center flex flex-col text-white"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        {/* Navigation Bar */}
         <NavbarDefault />
 
         <div className="flex flex-col items-center justify-center h-full">
