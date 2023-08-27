@@ -23,7 +23,7 @@ const Login = () => {
               required
             />
           </div>
-          <div className="mb-4 text=2xl">
+          <div className="mb-4 text-2xl">
             <input
               type="password"
               id="password"
