@@ -13,6 +13,7 @@ import Profile from "./views/Profile/Profile";
 import Signup from "./views/Signup/Signup";
 import Ticket from "./views/Ticket/Ticket";
 import TicketCreation from "./views/TicketCreation/TicketCreation";
+import FourZeroFour from "./views/404/404";
 
 function App() {
   return (
@@ -20,12 +21,14 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<PreLoginLanding />} />
+          <Route exact path="/404" element={<FourZeroFour />} />
           <Route exact path="/feed" element={<Feed />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/profile" element={<Profile />} />
           <Route exact path="/signup" element={<Signup />} />
           <Route exact path="/ticket" element={<Ticket />} />
           <Route exact path="/ticket-creation" element={<TicketCreation />} />
+          <Route exact path="/*" element={<FourZeroFour />} />
         </Routes>
       </Router>
     </div>
