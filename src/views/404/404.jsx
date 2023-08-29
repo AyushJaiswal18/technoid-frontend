@@ -16,8 +16,6 @@ const FourZeroFour = () => {
         className="h-[100vh] bg-cover flex flex-col text-white"
         style={{ backgroundImage: `url(${Error404})` }}
       >
-        <NavbarDefault />
-
         <div className="flex flex-col items-center justify-center h-full">
           <div className="w-2/3">
             <h1
