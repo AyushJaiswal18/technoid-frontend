@@ -13,7 +13,7 @@ const Ticket = () => {
         backgroundSize: "cover", }}
     >
       <Navbar />
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center mt-[6rem]">
         <TicketCard />
       </div>
       <Footer />

@@ -14,7 +14,7 @@ const Feed = () => {
             >
                 <NavbarDefault/>
 
-                <TicketCard/>
+                <div className='mt-[6rem]'><TicketCard/></div>
 
             </div>
             <Footer/>
