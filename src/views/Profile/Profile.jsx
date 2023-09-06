@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "../../assets/bg.png";
+import backgroundImage from "../../assets/bgprofile.png";
 import Navbar from "../../components/Navbar";
 import Ticket from "../Ticket/Ticket";
 import TicketCard from "../Ticket/TicketCard";
@@ -13,7 +13,9 @@ const Profile = () => {
 
         <div className="
         h-full flex flex-col bg-center text-white"
-             style={{ backgroundImage: `url(${backgroundImage})` }}>
+             style={{ backgroundImage: `url(${backgroundImage})`,
+                 backgroundAttachment: "fixed",
+                 backgroundSize: "cover", }}>
             <Navbar/>
             <div className="columns-3 m-2 flex flex-row justify-evenly">
             <div className="max-w-full">
@@ -29,9 +31,11 @@ const Profile = () => {
                             />
                         </div>
                         <hr className="m-[1rem] w-full mx-auto border-black" />
-                        <p><span className='text-black font-semibold'>Reg No.:</span><span> 299300123</span></p>
-                        <p><span className='text-black font-semibold'>College ID:</span><span> johndoe.299300123</span><br/>@muj.manipal.edu</p>
-                        <hr className="m-[1rem] w-full mx-auto border-black" />
+                        <div className="text-left">
+                            <p><span className='text-black font-semibold'>Reg No.:</span><span> 299300123</span></p>
+                            <p><span className='text-black font-semibold'>College ID:</span><span> johndoe.299300123</span><br/>@muj.manipal.edu</p>
+                        </div>
+                         <hr className="m-[1rem] w-full mx-auto border-black" />
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "../../assets/bg.png";
+import backgroundImage from "../../assets/bgfeed.png";
 import NavbarDefault from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Ticket from "../Ticket/Ticket";
@@ -9,8 +9,10 @@ const Feed = () => {
     return (
         <>
             <div
-                className="h-full bg-center flex flex-col text-white"
-                style={{backgroundImage: `url(${backgroundImage})`}}
+                className="h-full bg-center flex flex-col text-white bg-[#1F1F1E]"
+                style={{ backgroundImage: `url(${backgroundImage})`,
+                    backgroundAttachment: "fixed",
+                    backgroundSize: "cover", }}
             >
                 <NavbarDefault/>
 
