@@ -20,8 +20,7 @@ const Profile = () => {
             <div className="columns-3 m-2 flex flex-row justify-evenly">
             <div className="max-w-full">
                 <div className="min-h-screen max-w-full flex items-center justify-center">
-                    <div className="relative z-10 p-8 rounded-2xl shadow-md w-full max-w-sm bg-opacity-50 bg-[#FF3365]">
-                        <h2 className="md:text-5xl text-3xl font-semibold mb-2">NAME</h2>
+                    <div className="relative z-10 p-8 rounded-2xl shadow-md w-full max-w-sm bg-opacity-50 bg-[#FF3365]">                     <h2 className="md:text-5xl text-3xl font-semibold mb-2">NAME</h2>
                         <hr className="m-[1rem] w-full mx-auto border-black" />
                         <div className="flex items-center justify-around">
                             <img
