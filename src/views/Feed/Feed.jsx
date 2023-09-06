@@ -1,11 +1,25 @@
 import React from "react";
+import backgroundImage from "../../assets/bg.png";
+import NavbarDefault from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import Ticket from "../Ticket/Ticket";
+import TicketCard from "../Ticket/TicketCard";
 
 const Feed = () => {
     return (
-        <div>
-            <h1>Feed</h1>
-        </div>
-    )
+        <>
+            <div
+                className="h-full bg-center flex flex-col text-white"
+                style={{backgroundImage: `url(${backgroundImage})`}}
+            >
+                <NavbarDefault/>
+
+                <TicketCard/>
+
+            </div>
+            <Footer/>
+        </>
+    );
 }
 
 export default Feed;
