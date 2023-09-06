@@ -5,12 +5,14 @@ import Footer from "../../components/Footer";
 import TicketCard from "./TicketCard";
 
 const Ticket = () => {
-    return (
-        <div
+  return (
+    <div
       className="bg-center bg-[#1F1F1E] flex flex-col text-white"
-      style={{ backgroundImage: `url(${backgroundImage})`,
-                backgroundAttachment: "fixed",
-        backgroundSize: "cover", }}
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundAttachment: "fixed",
+        backgroundSize: "cover",
+      }}
     >
       <Navbar />
       <div className="min-h-screen flex items-center justify-center mt-[6rem]">
@@ -18,7 +20,7 @@ const Ticket = () => {
       </div>
       <Footer />
     </div>
-    )
-}
+  );
+};
 
 export default Ticket;
