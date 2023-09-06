@@ -23,7 +23,7 @@ const TicketCard = () => {
 
     return (
 
-        <div className="max-w-sm mx-auto shadow-lg rounded-lg mt-[6rem]">
+        <div className="max-w-sm mx-auto shadow-lg rounded-lg ">
             {currentItems.map((ticket, index) => (
                 <div key={index} className="p-4 mb-4 bg-black rounded-xl">
                     <div className="flex items-center justify-between mb-4">
